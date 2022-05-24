@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Two Card</h1>
+      <div class="dealt-cards">
+        <div id="card-1" class="dealt-card">
+          <img class="card-face" src="./cards/clubs/cards.jpg" alt="" />
+        </div>
+        <div id="card-2" class="dealt-card">
+          <img class="card-face" src="./cards/clubs/cards.jpg" alt="" />
+        </div>
+      </div>
+      <form>
+        <div class="guesses-container">
+          <div class="guess-container">
+            <input
+              class="guess"
+              type="text"
+              id="card-1-guess"
+              name="card-1-guess"
+              data-guess-image="guess-image-1"
+            />
+            <!-- <div id="guess-image-1" class="guess-image-container card"> -->
+            <img
+              id="guess-image-1"
+              class="guess-image card-face"
+              data-guess-input="card-1-guess"
+            />
+            <!-- </div> -->
+          </div>
+          <div class="guess-container">
+            <input
+              class="guess"
+              type="text"
+              id="card-2-guess"
+              name="card-2-guess"
+              data-guess-image="guess-image-2"
+            />
+            <!-- <div id="guess-image-2" class="guess-image-container card"> -->
+            <img
+              id="guess-image-2"
+              class="guess-image card-face"
+              data-guess-input="card-2-guess"
+            />
+            <!-- </div> -->
+          </div>
+        </div>
+
+        <div class="buttons">
+          <button id="guess-button" type="submit">Guess</button>
+          <button id="new-game-button" type="submit">New Game</button>
+        </div>
+      </form>
+      <div class="response">
+        <p></p>
+      </div>
+    </div>
+    <a href="https://www.freepik.com/vectors/number-design"
+      >Number design vector created by brgfx - www.freepik.com</a
+    >
+    <a href="https://www.freepik.com/vectors/queen-card"
+      >Queen card vector created by brgfx - www.freepik.com</a
+    >
+  </body>
+</html>

@@ -1,0 +1,5 @@
+export const guessButton = document.querySelector('#guess-button')
+export const newGameButton = document.querySelector('#new-game-button')
+export const guessInputs = document.querySelectorAll('.guess')
+export const guessImages = document.querySelectorAll('.guess-image')
+export const response = document.querySelector('.response > p')

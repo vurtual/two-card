@@ -1,0 +1,99 @@
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: greenyellow;
+  /* padding: 4em; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.dealt-cards,
+form {
+  width: 21em;
+  height: 13em;
+  display: flex;
+  justify-content: space-between;
+  padding: 2em 4em 0.5em;
+  margin-bottom: 1em;
+}
+
+form {
+  margin-top: 1em;
+  padding: 0.5em 4em 4em;
+  flex-direction: column;
+}
+
+.guesses-container,
+.buttons {
+  justify-content: space-between;
+  display: flex;
+  width: 100%;
+}
+
+.dealt-card,
+.guess-container,
+.buttons > button {
+  width: 9em;
+  height: 12.76em;
+  border-radius: 0.5em;
+  overflow: hidden;
+}
+
+.buttons > button {
+  height: 3em;
+  min-width: 10.8em;
+  margin-block: 0.8em;
+}
+
+input.guess {
+  height: 100%;
+  width: 100%;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 10em;
+}
+
+input.guess:active,
+input.guess:focus {
+  border-width: 0;
+  outline-width: 0;
+}
+
+.card-face {
+  display: block;
+  width: 70em;
+  height: 28em;
+  transform: translate(-60.1em, -14.5em);
+  border: 1px solid hotpink;
+}
+
+.guess-image {
+  display: none;
+}
+
+.response {
+  background-color: white;
+  height: 10em;
+  width: 21em;
+  border-radius: 0.5em;
+  outline: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.response > p {
+  font-size: 2em;
+  font-weight: bold;
+}
